@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Custom styles for cake bakery theme */
+/* Reflection container */
+.cake-reflection {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Reflection gradient overlay */
+.cake-reflection::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(44, 24, 16, 0.3), transparent);
+  z-index: 2;
+}
+
+/* Only the reflection image is blurred and faded */
+.cake-reflection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleY(-1);
+  opacity: 0.25;           /* More subtle reflection */
+  filter: blur(0.1px) brightness(0.37); /* Less blur, slightly dimmer */
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.bakery-bg {
+  background-color: #fff8f5;
+}
+
+.pastel-pink {
+  color: #ffd1dc;
+}
+
+.pastel-pink-bg {
+  background-color: #ffd1dc;
+}
+
+.cursive-font {
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Button styles */
+.bakery-button {
+  background-color: #ff85a2;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.bakery-button:hover {
+  background-color: #ff6b8b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
