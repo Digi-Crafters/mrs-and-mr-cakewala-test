@@ -64,7 +64,7 @@ const BakeryHero = () => {
   return (
     <div
       className="min-h-screen relative overflow-hidden"
-      style={{ backgroundColor: "#FFC5D3" }}
+      style={{ backgroundColor: "#FFFFFF" }}
       id="home"
     >
       {/* Background Elements */}
@@ -111,11 +111,11 @@ const BakeryHero = () => {
             {/* Main Heading */}
             <div className="space-y-2">
               <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-black leading-none tracking-tight">
-                <span className="block text-white">Sweet</span>
+                <span className="block">Sweet</span>
                 <span className="block bg-gradient-to-r from-pink-700 via-pink-800 to-pink-600 bg-clip-text text-transparent">
                   Dreams
                 </span>
-                <span className="block text-white">Baked</span>
+                <span className="block text-black">Baked</span>
                 <span className="block font-dancing-script text-4xl md:text-6xl lg:text-7xl text-pink-700 -mt-2 md:-mt-4">
                   Daily
                 </span>
@@ -188,7 +188,7 @@ const BakeryHero = () => {
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
-                          className="w-3 h-3 md:w-4 md:h-4 text-pink-400 fill-current"
+                          className="w-3 h-3 md:w-4 md:h-4 text-white fill-current"
                         />
                       ))}
                     </div>
@@ -264,7 +264,7 @@ const BakeryHero = () => {
               <div className="flex items-center space-x-2 md:space-x-3 text-pink-800">
                 <MapPin className="w-4 h-4 md:w-5 md:h-5 text-pink-600" />
                 <div>
-                  <p className="text-xs font-inter">Downtown</p>
+                  <p className="text-xs font-inter">Meerut</p>
                   <p className="font-bold text-sm font-inter">Open Now</p>
                 </div>
               </div>

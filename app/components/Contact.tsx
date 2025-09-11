@@ -111,7 +111,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+91 09997795796", "Available 6 AM - 10 PM"],
+      details: ["+91 09997795796", "Available 10:30 AM - 10 PM"],
       color: "text-pink-700"
     },
     {
@@ -136,7 +136,7 @@ const Contact = () => {
 
   return (
     <>
-      <section id="contact" className="relative py-16 md:py-24 overflow-hidden" style={{ backgroundColor: '#FFC5D3' }}>
+      <section id="contact" className="relative py-16 md:py-24 overflow-hidden" >
         {/* Background decorative elements */}
         <div className="absolute inset-0">
           <div className="absolute top-10 right-10 w-72 h-72 bg-gradient-to-r from-white/20 to-pink-200/30 rounded-full blur-3xl" />
@@ -154,7 +154,7 @@ const Contact = () => {
             className="text-center mb-16 md:mb-20"
           >
             <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl text-pink-900 mb-6 font-bold">
-              Visit Our Bakery
+             <span className='text-black'>Visit </span> Us
             </h2>
             <p className="font-inter text-lg md:text-xl text-pink-800 max-w-3xl mx-auto leading-relaxed">
               Come experience the warmth of our bakery, meet our passionate bakers, 
@@ -184,7 +184,7 @@ const Contact = () => {
                         <info.icon className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-playfair text-xl md:text-2xl text-pink-900 font-bold mb-3">
+                        <h3 className="font-playfair text-xl md:text-2xl text-black font-bold mb-3">
                           {info.title}
                         </h3>
                         {info.details.map((detail, detailIndex) => (

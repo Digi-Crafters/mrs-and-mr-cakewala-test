@@ -75,24 +75,24 @@ const About = () => {
   };
 
   const achievements = [
-    { icon: Award, number: "25+", label: "Awards Won", color: "text-pink-600" },
+    { icon: Award, number: "25+", label: "Awards Won", color: "black" },
     {
       icon: Users,
       number: "50k+",
       label: "Happy Customers",
-      color: "text-pink-700",
+      color: "text-black",
     },
     {
       icon: Cake,
       number: "500+",
       label: "Unique Recipes",
-      color: "text-pink-600",
+      color: "text-black",
     },
     {
       icon: Clock,
       number: "24/7",
       label: "Fresh Baking",
-      color: "text-pink-700",
+      color: "text-black",
     },
   ];
 
@@ -126,14 +126,24 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative py-16 md:py-24 overflow-hidden"
-      style={{ backgroundColor: "#FFC5D3" }}
+      className="relative py-16 md:overflow-hidden"
+      style={{ backgroundColor: "#FFFFFF" }}
     >
       {/* Background decorative elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-r from-white/20 to-pink-200/30 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-r from-pink-300/20 to-white/25 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-gradient-to-r from-pink-200/25 to-pink-100/20 rounded-full blur-2xl" />
+        <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-r from-pink-100/30 to-white/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-r from-pink-200/40 to-pink-100/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-gradient-to-r from-pink-300/25 to-pink-200/20 rounded-full blur-2xl" />
+
+        {/* Subtle Pattern Overlay */}
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.6) 1px, transparent 0)",
+            backgroundSize: "40px 40px",
+          }}
+        />
       </div>
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
@@ -145,8 +155,11 @@ const About = () => {
           variants={fadeInUp}
           className="text-center mb-16 md:mb-20"
         >
-          <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl text-pink-900 mb-6 font-bold">
-            Our Story
+          <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl text-black mb-6 font-bold">
+            Our{" "}
+            <span className="bg-gradient-to-r from-pink-700 via-pink-800 to-pink-600 bg-clip-text text-transparent">
+              Story
+            </span>
           </h2>
           <p className="font-inter text-lg md:text-xl text-pink-800 max-w-3xl mx-auto leading-relaxed">
             A journey of passion, tradition, and the sweetest dreams coming to
@@ -164,9 +177,9 @@ const About = () => {
             variants={fadeInLeft}
             className="space-y-6"
           >
-            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-xl border border-pink-200/50">
+            <div className="bg-white/40 backdrop-blur-2xl rounded-3xl p-6 md:p-8 shadow-xl border border-white/40">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-pink-600 to-pink-700 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-pink-600 via-pink-700 to-pink-600 rounded-full flex items-center justify-center shadow-lg">
                   <Calendar className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -200,7 +213,7 @@ const About = () => {
             </div>
 
             {/* Location & Hours */}
-            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-pink-200/30">
+            <div className="bg-white/40 backdrop-blur-2xl rounded-2xl p-6 shadow-lg border border-white/40">
               <div className="flex items-start space-x-4">
                 <MapPin className="w-6 h-6 text-pink-600 mt-1 flex-shrink-0" />
                 <div>
@@ -229,6 +242,9 @@ const About = () => {
             variants={fadeInRight}
             className="relative"
           >
+            {/* Background Glow */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-white/30 to-pink-200/40 rounded-3xl blur-xl scale-105 -z-10"></div>
+
             {/* Main Image */}
             <div className="relative h-96 md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
@@ -238,12 +254,12 @@ const About = () => {
                 className="object-cover"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-pink-900/20 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-pink-900/40 via-transparent to-transparent" />
 
               {/* Floating badge */}
-              <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
+              <div className="absolute top-6 left-6 bg-white/60 backdrop-blur-xl rounded-full px-4 py-2 shadow-lg border border-pink-200/50">
                 <div className="flex items-center space-x-2">
-                  <Star className="w-4 h-4 text-pink-600 fill-current" />
+                  <Star className="w-4 h-4 text-pink-500 fill-current" />
                   <span className="text-sm font-semibold text-pink-900 font-inter">
                     Est. 1999
                   </span>
@@ -282,9 +298,12 @@ const About = () => {
         >
           <motion.h3
             variants={fadeInUp}
-            className="font-playfair text-3xl md:text-4xl text-pink-900 text-center mb-12 font-bold"
+            className="font-playfair text-3xl md:text-4xl text-black text-center mb-12 font-bold"
           >
-            Our Achievements
+            Our{" "}
+            <span className="bg-gradient-to-r from-pink-700 via-pink-800 to-pink-600 bg-clip-text text-transparent">
+              Achievements
+            </span>
           </motion.h3>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
@@ -292,9 +311,9 @@ const About = () => {
               <motion.div
                 key={index}
                 variants={fadeInUp}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-pink-200/50"
+                className="bg-white/40 backdrop-blur-2xl rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-white/40"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-600 to-pink-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-r from-pink-600 via-pink-700 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <achievement.icon className="w-8 h-8 text-white" />
                 </div>
                 <div
@@ -302,7 +321,7 @@ const About = () => {
                 >
                   {achievement.number}
                 </div>
-                <div className="text-pink-800 font-inter font-medium text-sm md:text-base">
+                <div className="text-black font-inter font-medium text-sm md:text-base">
                   {achievement.label}
                 </div>
               </motion.div>
@@ -319,9 +338,12 @@ const About = () => {
         >
           <motion.h3
             variants={fadeInUp}
-            className="font-playfair text-3xl md:text-4xl text-pink-900 text-center mb-12 font-bold"
+            className="font-playfair text-3xl md:text-4xl text-black text-center mb-12 font-bold"
           >
-            What Makes Us Special
+            What Makes Us{" "}
+            <span className="bg-gradient-to-r from-pink-700 via-pink-800 to-pink-600 bg-clip-text text-transparent">
+              Special
+            </span>
           </motion.h3>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
@@ -329,12 +351,12 @@ const About = () => {
               <motion.div
                 key={index}
                 variants={fadeInUp}
-                className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-pink-200/50 group"
+                className="bg-white/40 backdrop-blur-2xl rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/40 group"
               >
-                <div className="w-14 h-14 bg-gradient-to-r from-pink-600 to-pink-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 bg-gradient-to-r from-pink-600 via-pink-700 to-pink-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <value.icon className="w-7 h-7 text-white" />
                 </div>
-                <h4 className="font-playfair text-xl md:text-2xl text-pink-900 font-bold mb-4">
+                <h4 className="font-playfair text-xl md:text-2xl text-black font-bold mb-4">
                   {value.title}
                 </h4>
                 <p className="text-pink-800 font-inter leading-relaxed text-sm md:text-base">
@@ -347,7 +369,7 @@ const About = () => {
       </div>
 
       {/* Bottom gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-pink-400/10 to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-pink-200/10 to-transparent pointer-events-none" />
     </section>
   );
 };

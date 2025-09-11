@@ -116,7 +116,10 @@ const BakeryNavigation = () => {
                   {item.label}
                 </button>
               ))}
-              <button className="bg-gradient-to-r from-pink-500 to-pink-400 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-pink-400/25 transition-all duration-300 transform hover:scale-105 overflow-hidden font-inter mt-4">
+              <button
+                className="bg-gradient-to-r from-pink-500 to-pink-400 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-pink-400/25 transition-all duration-300 transform hover:scale-105 overflow-hidden font-inter mt-4"
+                onClick={() => smoothScrollTo("#menu")}
+              >
                 Order Now
               </button>
             </div>
