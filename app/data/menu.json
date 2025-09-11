@@ -1,0 +1,150 @@
+{
+  "categories": [
+    {
+      "id": "cakes",
+      "name": "Signature Cakes",
+      "description": "Our handcrafted cakes are made with premium ingredients and decorated with love.",
+      "items": [
+        {
+          "id": "chocolate-truffle",
+          "name": "Chocolate Truffle",
+          "description": "Rich chocolate sponge layered with decadent chocolate ganache and topped with chocolate shavings.",
+          "price": 38.99,
+          "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1089&q=80",
+          "bestseller": true
+        },
+        {
+          "id": "red-velvet",
+          "name": "Red Velvet",
+          "description": "Classic red velvet cake with cream cheese frosting and elegant decorations.",
+          "price": 42.99,
+          "image": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80",
+          "bestseller": true
+        },
+        {
+          "id": "vanilla-bliss",
+          "name": "Vanilla Bliss",
+          "description": "Light vanilla sponge with vanilla buttercream frosting, perfect for any occasion.",
+          "price": 36.99,
+          "image": "https://images.unsplash.com/photo-1587668178277-295251f900ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+        },
+        {
+          "id": "strawberry-delight",
+          "name": "Strawberry Delight",
+          "description": "Fresh strawberry cake with strawberry compote filling and whipped cream frosting.",
+          "price": 40.99,
+          "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=965&q=80"
+        }
+      ]
+    },
+    {
+      "id": "cupcakes",
+      "name": "Gourmet Cupcakes",
+      "description": "Delightful bite-sized treats perfect for any celebration.",
+      "items": [
+        {
+          "id": "chocolate-cupcake",
+          "name": "Chocolate Cupcake",
+          "description": "Moist chocolate cupcake topped with chocolate buttercream and sprinkles.",
+          "price": 3.99,
+          "image": "https://images.unsplash.com/photo-1599785209707-a456fc1337bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80",
+          "bestseller": true
+        },
+        {
+          "id": "red-velvet-cupcake",
+          "name": "Red Velvet Cupcake",
+          "description": "Classic red velvet cupcake with cream cheese frosting.",
+          "price": 3.99,
+          "image": "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+        },
+        {
+          "id": "vanilla-cupcake",
+          "name": "Vanilla Cupcake",
+          "description": "Light vanilla cupcake with vanilla buttercream swirl.",
+          "price": 3.49,
+          "image": "https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+        },
+        {
+          "id": "lemon-cupcake",
+          "name": "Lemon Cupcake",
+          "description": "Tangy lemon cupcake with lemon zest buttercream.",
+          "price": 3.99,
+          "image": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80"
+        }
+      ]
+    },
+    {
+      "id": "pastries",
+      "name": "Artisanal Pastries",
+      "description": "Flaky, buttery pastries made fresh daily in our bakery.",
+      "items": [
+        {
+          "id": "croissant",
+          "name": "Classic Croissant",
+          "description": "Buttery, flaky croissant with a golden exterior and soft interior.",
+          "price": 3.49,
+          "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80",
+          "bestseller": true
+        },
+        {
+          "id": "pain-au-chocolat",
+          "name": "Pain au Chocolat",
+          "description": "Chocolate-filled croissant with a rich, buttery flavor.",
+          "price": 4.29,
+          "image": "https://images.unsplash.com/photo-1608198093002-ad4e005484ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
+        },
+        {
+          "id": "danish-pastry",
+          "name": "Fruit Danish",
+          "description": "Flaky pastry filled with seasonal fruits and vanilla custard.",
+          "price": 4.49,
+          "image": "https://images.unsplash.com/photo-1509365465985-25d11c17e812?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
+        },
+        {
+          "id": "cinnamon-roll",
+          "name": "Cinnamon Roll",
+          "description": "Soft rolled pastry with cinnamon filling and cream cheese glaze.",
+          "price": 4.99,
+          "image": "https://images.unsplash.com/photo-1583527875108-f8723b94ea2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+          "bestseller": true
+        }
+      ]
+    },
+    {
+      "id": "cookies",
+      "name": "Homestyle Cookies",
+      "description": "Freshly baked cookies that taste just like home.",
+      "items": [
+        {
+          "id": "chocolate-chip",
+          "name": "Chocolate Chip Cookie",
+          "description": "Classic chocolate chip cookie with gooey chocolate chunks.",
+          "price": 2.49,
+          "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1019&q=80",
+          "bestseller": true
+        },
+        {
+          "id": "oatmeal-raisin",
+          "name": "Oatmeal Raisin Cookie",
+          "description": "Hearty oatmeal cookie with plump raisins and a hint of cinnamon.",
+          "price": 2.29,
+          "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+        },
+        {
+          "id": "peanut-butter",
+          "name": "Peanut Butter Cookie",
+          "description": "Rich peanut butter cookie with classic crisscross pattern.",
+          "price": 2.49,
+          "image": "https://images.unsplash.com/photo-1590080874088-eec64895b423?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+        },
+        {
+          "id": "snickerdoodle",
+          "name": "Snickerdoodle",
+          "description": "Soft, chewy cookie rolled in cinnamon sugar.",
+          "price": 2.29,
+          "image": "https://images.unsplash.com/photo-1618923850107-d1a234d7a73a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1062&q=80"
+        }
+      ]
+    }
+  ]
+}

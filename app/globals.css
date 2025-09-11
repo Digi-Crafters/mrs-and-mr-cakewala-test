@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-dancing-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
